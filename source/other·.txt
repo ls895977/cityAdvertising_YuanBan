@@ -1,0 +1,12 @@
+
+微信支付申请成功
+appsecret：ddbea4f3354b28924777344fe3df655f
+appid： wx4100e7e2d7234a8d
+
+http://tcad.12806.cn/api/public/appapi/listAllApis.php
+新增的一般接口名称前有#号
+
+微信开放平台帐号：3506581431@qq.com  登录密码：123456xyzXYZ
+mob：18518716678  123456xyzXYZ
+
+极光：zheyouyou@qq.com   123456xyzXYZ

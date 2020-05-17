@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:paddingTop="19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:onClick="backClick"
+                android:padding="9dp"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/textColor" />
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_add_ad_video"
+                        android:layout_width="76dp"
+                        android:layout_height="103dp"
+                        android:layout_margin="26dp"
+                        android:background="@drawable/shape_add_ad_addvideo"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:background="@mipmap/icom_home_all_money" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="添加您的广告"
+                            android:textColor="#b5b4ba"
+                            android:textSize="10sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="15秒"
+                            android:textColor="#b5b4ba"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="57dp"
+                        android:src="@mipmap/icom_home_all_money" />
+
+                    <TextView
+                        android:id="@+id/tv_add_ad_video_helper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_marginRight="20dp"
+                        android:drawablePadding="14dp"
+                        android:text="发布任务找专业人士制作经典广告"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_add_ad_video_img"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@color/black"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#b5b4ba"
+            android:text="设置广告类别"
+            android:padding="14dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/iv_ad_title"
+                android:layout_width="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="36dp"
+                android:src="@mipmap/icom_home_all_money"
+                android:layout_height="16dp"/>
+
+            <EditText
+                android:id="@+id/et_ad_title"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/iv_ad_title"
+                android:background="@null"
+                android:hint="添加广告标题"
+                android:textColorHint="#6a6869"
+                android:textSize="16sp"
+                android:textColor="@color/tv_black"
+                android:layout_height="match_parent"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iv_ad_title"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ad_type"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/iv_ad_type"
+                android:layout_width="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="36dp"
+                android:src="@mipmap/icom_home_all_money"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:id="@+id/et_ad_type"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/iv_ad_type"
+                android:text="选择广告类别"
+                android:textColor="@color/tv_black"
+                android:layout_centerVertical="true"
+                android:textColorHint="@color/tv_hint"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_arrow_right"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iv_ad_type"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/iv_ad_des"
+                android:layout_width="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="36dp"
+                android:src="@mipmap/icom_home_all_money"
+                android:layout_height="16dp"/>
+
+            <EditText
+                android:id="@+id/et_ad_des"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/iv_ad_des"
+                android:background="@null"
+                android:hint="输入广告描述（30字内）"
+                android:maxLength="31"
+                android:ellipsize="end"
+                android:textColor="#6a6869"
+                android:textColorHint="@color/tv_hint"
+                android:textSize="16sp"
+                android:layout_height="match_parent"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iv_ad_des"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_ad_free"
+                android:layout_width="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="36dp"
+                android:src="@mipmap/icom_home_all_money"
+                android:layout_height="16dp"/>
+
+            <EditText
+                android:id="@+id/et_ad_free"
+                android:layout_width="match_parent"
+                android:layout_marginRight="26dp"
+                android:layout_toRightOf="@id/iv_ad_free"
+                android:background="@null"
+                android:layout_marginTop="9dp"
+                android:hint="添加免费文字内容"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColorHint="#6a6869"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#abaaaa"
+                android:layout_toRightOf="@id/iv_ad_free"
+                android:layout_below="@id/et_ad_free"
+                android:layout_marginBottom="4dp"
+                android:text="如：免费试吃、免费试用、免费领礼物等，用户点击该菜单后其电话号码将发送到您的手机，如用户故意点击，可对其投诉。"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iv_ad_free"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ad_add_coupon"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_ad_coupon"
+                android:layout_width="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="36dp"
+                android:src="@mipmap/icom_home_all_money"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_ad_coupon"
+                android:layout_width="76dp"
+                android:text="添加优惠券"
+                android:textSize="13sp"
+                android:layout_toRightOf="@id/iv_ad_coupon"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_add_ad_have_coupon"
+                android:gravity="center"
+                android:layout_height="28dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#abaaaa"
+                android:layout_toRightOf="@id/iv_ad_coupon"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/tv_ad_coupon"
+                android:layout_marginBottom="16dp"
+                android:text="添加优惠券可以吸引更多用户购买产品，一张优惠券一个客户。"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_arrow_right"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iv_ad_coupon"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ad_add_act"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_ad_act"
+                android:layout_width="14dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="36dp"
+                android:src="@mipmap/icom_home_all_money"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_ad_act"
+                android:layout_width="76dp"
+                android:text="添加活动"
+                android:textSize="13sp"
+                android:layout_toRightOf="@id/iv_ad_act"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_add_ad_have_coupon"
+                android:gravity="center"
+                android:layout_height="28dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#abaaaa"
+                android:layout_toRightOf="@id/iv_ad_act"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/tv_ad_act"
+                android:layout_marginBottom="16dp"
+                android:text="添加活动可以吸引更多用户关注。"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_arrow_right"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/iv_ad_act"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/add_ad_next"
+            android:layout_width="140dp"
+            android:text="下一步"
+            android:background="@drawable/shape_add_ad_next"
+            android:textSize="16sp"
+            android:textColor="@color/tv_black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="38dp"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.juyijia.mm.activity.CommunityAgentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:paddingTop="19dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:onClick="backClick"
+            android:padding="9dp"
+            android:src="@mipmap/icon_back"
+            android:tint="@color/textColor" />
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="小区代理"
+            android:textColor="#1f1f1f"
+            android:textSize="25sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_title"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正常"
+                android:textColor="#108f03"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥3000"
+                android:textColor="#b2b2b2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="34dp"
+        android:text="烟台市 | 莱山区 | 迎春大街 | 绿色家园小区"
+        android:textColor="#b2b2b2"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@mipmap/icom_home_all_money"
+        android:drawablePadding="16dp"
+        android:text="倒计时：7天"
+        android:layout_marginBottom="23dp"
+        android:textColor="#1f1f1f"
+        android:textSize="21sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ededed"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="选择复投区域"
+        android:textColor="#212121"
+        android:textSize="21sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e1dede" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:drawablePadding="12dp"
+        android:drawableLeft="@mipmap/icom_home_all_money"
+        android:layout_marginTop="20dp"
+        android:text="烟台市莱山区绿色家园小区"
+        android:textColor="#212121"
+        android:textSize="17sp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:textSize="13sp"
+    android:textColor="#b2b2b2"
+    android:layout_marginTop="11dp"
+    android:layout_marginLeft="44dp"
+    android:text="当前区域收入：¥3348.00"
+    android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#efefef"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:layout_width="242dp"
+        android:layout_marginTop="70dp"
+        android:text="复投"
+        android:textColor="#fff"
+        android:textSize="21sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/shape_main_ad_coupon"
+        android:layout_height="42dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="账户余额：5800元"
+        android:textColor="#1f1f1f"
+        android:textSize="21sp"
+        android:layout_marginBottom="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="请保证账户余额充足"
+        android:textColor="#b2b2b2"
+        android:textSize="13sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="请出局后再复投"
+        android:textColor="#b2b2b2"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ededed"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="全自动复投:vip用户尊享"
+        android:textColor="#212121"
+        android:textSize="21sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e1dede" />
+    <TextView
+        android:layout_width="186dp"
+        android:layout_marginTop="58dp"
+        android:text="全自动复投"
+        android:textColor="#fdfffe"
+        android:textSize="21sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/shape_agent"
+        android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="平台自动为您复投，防止利润流失，提前三天短信通知，资金不足，平台为您自动顺延三天。"
+            android:textColor="#b2b2b2"
+            android:textSize="14sp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="52dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f6f6f6"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.juyijia.mm.activity.IncomeRecordActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="19dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_toolbar_h">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:onClick="backClick"
+            android:padding="9dp"
+            android:src="@mipmap/icon_back"
+            android:tint="@color/textColor" />
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:text="收益记录"
+            android:gravity="center_vertical"
+            android:textColor="@color/tv_black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ir_type"
+        android:layout_width="wrap_content"
+        android:text="全部交易类型"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="广告收益只显示一周内详情"
+        android:textSize="13sp"
+        android:textColor="@color/tv_gray"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_ir_time"
+        android:layout_width="wrap_content"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        tools:text="2019年10月"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_ir_money"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#929292"
+        tools:text="支出00"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_ir"
+        android:layout_width="match_parent"
+        android:layout_marginTop="22dp"
+        android:background="@color/white"
+        android:layout_height="match_parent"/>
+</LinearLayout>

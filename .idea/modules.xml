@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="cityAdvertising_YuanBan/app" />
+      <module fileurl="file://$PROJECT_DIR$/beauty/beauty.iml" filepath="$PROJECT_DIR$/beauty/beauty.iml" group="cityAdvertising_YuanBan/beauty" />
+      <module fileurl="file://$PROJECT_DIR$/cityAdvertising_YuanBan.iml" filepath="$PROJECT_DIR$/cityAdvertising_YuanBan.iml" group="cityAdvertising_YuanBan" />
+      <module fileurl="file://$PROJECT_DIR$/game/game.iml" filepath="$PROJECT_DIR$/game/game.iml" group="cityAdvertising_YuanBan/game" />
+      <module fileurl="file://$PROJECT_DIR$/jpush/jpush.iml" filepath="$PROJECT_DIR$/jpush/jpush.iml" group="cityAdvertising_YuanBan/jpush" />
+      <module fileurl="file://$PROJECT_DIR$/mob/mob.iml" filepath="$PROJECT_DIR$/mob/mob.iml" group="cityAdvertising_YuanBan/mob" />
+      <module fileurl="file://$PROJECT_DIR$/video/video.iml" filepath="$PROJECT_DIR$/video/video.iml" group="cityAdvertising_YuanBan/video" />
+    </modules>
+  </component>
+</project>

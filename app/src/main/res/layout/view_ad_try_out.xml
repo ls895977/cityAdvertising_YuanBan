@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.juyijia.mm.custom.MyLinearLayout3
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:mll_height_percent="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+               android:src="@mipmap/ic_launcher"
+                />
+              <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:text="免费领取礼品"
+                    android:textColor="#fd0303"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="14dp"
+                  android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="10dp"
+                android:tint="@color/black"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_live_ready_close"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="确认后，商家将联系您，请随时接通电话。"
+            android:textColor="@color/black"
+            android:layout_marginRight="34dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="18dp"
+            android:drawableLeft="@mipmap/icom_home_all_money"
+            android:drawablePadding="8dp"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="34dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icom_home_all_money"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="平台内所有免费产品商家无偿提供，请放心领取或试用，一旦发现违规商家，请立刻举报。"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginRight="34dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="34dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icom_home_all_money"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_try_out_location"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/tv_red"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="28dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_try_out_ok"
+                android:layout_width="100dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="确认"
+                android:background="@drawable/shape_try_out_ok"
+                android:layout_height="30dp"/>
+
+            <Button
+                android:id="@+id/btn_try_out_no"
+                android:layout_width="100dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="32dp"
+                android:text="取消"
+                android:background="@drawable/shape_try_out_ok"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#eaeaea"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:text="*****      注意事项     *****"
+            android:textColor="@color/tv_red"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_try_out_des"
+            android:textSize="11sp"
+            android:textColor="#b0aeae"
+            android:text="eeee"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="0dp"/>
+
+</android.support.v4.widget.NestedScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/input"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_video_comment_input"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="留下你的精彩评论吧"
+                android:textColor="@color/gray1"
+                android:textSize="19sp"
+                />
+
+            <ImageView
+                android:id="@+id/btn_face"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:button="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/icon_chat_face"
+                android:tint="@color/gray1"
+                />
+        </LinearLayout>
+    </com.juyijia.mm.custom.MyLinearLayout3>
+</FrameLayout>

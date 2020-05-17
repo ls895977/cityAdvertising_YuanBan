@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <com.juyijia.mm.custom.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:canScroll="false" />
+
+
+    <FrameLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <com.juyijia.mm.custom.TabButtonGroup
+            android:background="@color/white"
+            android:id="@+id/tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <com.juyijia.mm.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_checked="true"
+                app:tbn_icon_size="26dp"
+                app:tbn_selected_icon="@mipmap/home1"
+                app:tbn_unselected_icon="@mipmap/home0"
+                app:tbn_text_color="#D2D4D8"
+                app:tbn_selected_text_color="#DB3C28"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_home"
+              />
+
+            <com.juyijia.mm.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_weight="1"
+                app:tbn_icon_size="26dp"
+                app:tbn_selected_icon="@mipmap/icon_main_near_1"
+                app:tbn_text_color="#D2D4D8"
+                app:tbn_selected_text_color="#DB3C28"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_near"
+                app:tbn_unselected_icon="@mipmap/icon_main_near_0" />
+
+            <com.juyijia.mm.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="26dp"
+                app:tbn_selected_icon="@mipmap/icon_main_list_1"
+                app:tbn_unselected_icon="@mipmap/icon_main_list_0"
+                app:tbn_text_color="#D2D4D8"
+                app:tbn_selected_text_color="#DB3C28"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_list"
+              />
+
+            <com.juyijia.mm.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="26dp"
+                app:tbn_selected_icon="@mipmap/icon_main_me_1"
+                app:tbn_text_color="#D2D4D8"
+                app:tbn_selected_text_color="#DB3C28"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_me"
+                app:tbn_unselected_icon="@mipmap/icon_main_me_0" />
+
+        </com.juyijia.mm.custom.TabButtonGroup>
+        <ImageView
+            android:id="@+id/btn_start"
+            android:layout_width="38dp"
+            android:layout_marginBottom="6dip"
+            android:layout_height="38dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:onClick="mainClick"
+            android:src="@mipmap/icon_record" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btm_ad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_ad_detail"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/shape_main_ad_detail"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_ad_use"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/shape_main_ad_coupon"
+            android:gravity="center"
+            android:text="试用"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_btn_coupon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/icom_home_coupon"
+                    android:tint="#c30d23" />
+
+                <TextView
+                    android:id="@+id/coupon_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_btn_comment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/icon_video_comment" />
+
+                <TextView
+                    android:id="@+id/comment_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_btn_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/icon_video_share" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:text="转发\n赚钱"
+                        android:textColor="@color/gameGlobal"
+                        android:textSize="6sp" />
+
+                    <TextView
+                        android:id="@+id/share_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        tools:text="3.3w" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
